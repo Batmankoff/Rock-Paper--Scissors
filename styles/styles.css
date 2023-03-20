@@ -169,16 +169,19 @@ body {
 }
 .player__rock-btn {
   background-image: url("../images/rock.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 20px;
 }
 .player__paper-btn {
   background-image: url("../images/paper.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 20px;
 }
 .player__scissors-btn {
   background-image: url("../images/scissors.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 20px;
 }
@@ -192,28 +195,31 @@ body {
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 560px) {
   .field {
-    gap: 40px;
+    gap: 10px;
   }
   .title {
-    font-size: 1.9rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
   }
   .computer .no-btn,
   .player .btn {
-    width: 6.5rem;
-    height: 6.6rem;
+    width: 5rem;
+    height: 5rem;
   }
   .result {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
   }
   .result__modal {
     width: 23.7rem;
-    height: 88vh;
+    height: 100vh;
   }
   .computer__title {
     margin-bottom: 10px;
+  }
+  .buttons {
+    gap: 1rem;
   }
 }
