@@ -41,8 +41,8 @@ body {
 .title {
   font-weight: 700;
   text-align: center;
-  font-size: 5rem;
-  margin-bottom: 30px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 .computer__title,
 .player__title {
@@ -55,13 +55,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .result {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   border: 1px solid #000;
   border-radius: 50%;
   display: flex;
@@ -73,8 +73,8 @@ body {
 .result__modal {
   position: absolute;
   z-index: 2;
-  height: 28rem;
-  width: 28rem;
+  height: 22rem;
+  width: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,7 +122,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 1.8rem;
+  padding: 1rem;
 }
 .computer .buttons,
 .computer__choice .icon {
@@ -131,8 +131,8 @@ body {
 
 /* computer no-btn */
 .computer .no-btn {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,8 +158,8 @@ body {
 
 /* player btn */
 .player .btn {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 8rem;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +194,7 @@ body {
 
 @media (max-width: 390px) {
   .field {
-    gap: 15px;
+    gap: 40px;
   }
   .title {
     font-size: 1.9rem;
@@ -211,6 +211,9 @@ body {
   }
   .result__modal {
     width: 23.7rem;
-    height: 86vh;
+    height: 88vh;
+  }
+  .computer__title {
+    margin-bottom: 10px;
   }
 }
