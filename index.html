@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Камень-Ножницы-Бумага</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Камень-Ножницы-Бумага</h1>
+    <div class="field">
+      <div class="computer">
+        <h2 class="computer__title">Компьютер</h2>
+        <div class="buttons">
+          <div class="computer__scissors-btn no-btn"></div>
+          <div class="computer__paper-btn no-btn"></div>
+          <div class="computer__rock-btn no-btn"></div>
+        </div>
+      </div>
+      <!-- /.computer -->
+
+      <div class="result">
+        <div class="computer__choice">
+          <div class="computer__choice-scissors">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#scissors"></use>
+            </svg>
+          </div>
+          <div class="computer__choice-paper">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#paper"></use>
+            </svg>
+          </div>
+          <div class="computer__choice-rock">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#rock"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="result__modal">
+          <p class="result__text"></p>
+          <button
+            class="result__reload"
+            onclick="location.reload(); return false;"
+          ></button>
+        </div>
+
+        <div class="player__choice">
+          <div class="player__choice-scissors">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#scissors"></use>
+            </svg>
+          </div>
+          <div class="player__choice-paper">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#paper"></use>
+            </svg>
+          </div>
+          <div class="player__choice-rock">
+            <svg class="icon">
+              <use xlink:href="images/sprite.svg#rock"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- /.result -->
+
+      <div class="player">
+        <h2 class="player__title">Игрок</h2>
+        <div class="buttons">
+          <div class="player__rock-btn btn"></div>
+          <div class="player__paper-btn btn"></div>
+          <div class="player__scissors-btn btn"></div>
+        </div>
+      </div>
+      <!-- /.player -->
+    </div>
+    <!-- /.field -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

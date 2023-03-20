@@ -1,0 +1,216 @@
+/* reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #d6c87c;
+}
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+.computer__title,
+.player__title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.result {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.result__modal {
+  position: absolute;
+  z-index: 2;
+  height: 28rem;
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+}
+.result__reload {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  background-image: url("../images/restart-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  cursor: pointer;
+  background-color: #67b8e0;
+  padding: 0;
+  border-radius: 8px;
+}
+.visible {
+  display: flex;
+}
+.result .icon {
+  width: 6rem;
+  height: 6rem;
+}
+.result__text {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+}
+
+.computer__choice,
+.player__choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.8rem;
+}
+.computer .buttons,
+.computer__choice .icon {
+  transform: rotate(180deg);
+}
+
+/* computer no-btn */
+.computer .no-btn {
+  width: 12.5rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+  background-color: #cd92d6;
+  border-radius: 30px;
+}
+.computer__scissors-btn {
+  background-image: url("../images/scissors.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+.computer__paper-btn {
+  background-image: url("../images/paper.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+.computer__rock-btn {
+  background-image: url("../images/rock.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+
+/* player btn */
+.player .btn {
+  width: 12.5rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #a09cd6;
+  border-radius: 30px;
+}
+.player__rock-btn {
+  background-image: url("../images/rock.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+.player__paper-btn {
+  background-image: url("../images/paper.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+.player__scissors-btn {
+  background-image: url("../images/scissors.svg");
+  background-size: cover;
+  background-position: 0 20px;
+}
+
+.computer__choice-scissors,
+.computer__choice-paper,
+.computer__choice-rock,
+.player__choice-scissors,
+.player__choice-paper,
+.player__choice-rock {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .field {
+    gap: 15px;
+  }
+  .title {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+  .computer .no-btn,
+  .player .btn {
+    width: 6.5rem;
+    height: 6.6rem;
+  }
+  .result {
+    width: 20rem;
+    height: 20rem;
+  }
+  .result__modal {
+    width: 23.7rem;
+    height: 86vh;
+  }
+}
