@@ -137,23 +137,25 @@ body {
   align-items: center;
   justify-content: center;
   cursor: not-allowed;
-  background-color: #cd92d6;
   border-radius: 30px;
 }
 .computer__scissors-btn {
-  background-image: url("../images/scissors.svg");
+  background-image: url("../images/scissors.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: center;
 }
 .computer__paper-btn {
-  background-image: url("../images/paper.svg");
+  background-image: url("../images/paper.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: center;
 }
 .computer__rock-btn {
-  background-image: url("../images/rock.svg");
+  background-image: url("../images/rock.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 5px;
 }
 
 /* player btn */
@@ -164,26 +166,25 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #a09cd6;
   border-radius: 30px;
 }
 .player__rock-btn {
-  background-image: url("../images/rock.svg");
+  background-image: url("../images/rock.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: 0 5px;
 }
 .player__paper-btn {
-  background-image: url("../images/paper.svg");
+  background-image: url("../images/paper.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: center;
 }
 .player__scissors-btn {
-  background-image: url("../images/scissors.svg");
+  background-image: url("../images/scissors.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 20px;
+  background-position: center;
 }
 
 .computer__choice-scissors,
